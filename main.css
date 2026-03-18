@@ -7,6 +7,7 @@ body {
   font-family: "Dosis", "Noto Sans KR", sans-serif;
   background: linear-gradient(135deg, #eef7ff, #fdfcff, #fff5fb);
   color: #4a4a4a;
+  font-size: 14px;
 }
 
 .main {
@@ -100,6 +101,7 @@ body {
 .section p {
   margin: 0;
   line-height: 1.8;
+  word-break: keep-all;
 }
 
 .section ul {
@@ -259,8 +261,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
   .intro-box h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .about-box {
