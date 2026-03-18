@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Dosis", "Noto Sans KR", sans-serif;
+  background: linear-gradient(135deg, #eef7ff, #fdfcff, #fff5fb);
+  color: #4a4a4a;
+}
+
+.main {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-box {
+  width: 100%;
+  max-width: 600px;
+  background-color: #e4f1ff;
+  border-radius: 30px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.intro-box h1 {
+  margin: 0;
+  font-size: 44px;
+  color: #4f6f94;
+}
+
+.intro-box p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #5f7998;
+  line-height: 1.7;
+}
+
+.icon-menu {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon-menu a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  color: #4f6f94;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.icon-menu a:hover {
+  transform: translateY(-4px);
+  background-color: #ffeef6;
+  color: #7d5f8c;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 26px;
+  border-radius: 22px;
+  background-color: white;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
+  text-align: center;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #5d7fa6;
+  font-size: 24px;
+}
+
+.section p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 0;
+  line-height: 1.9;
+  list-style-position: inside;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.about-box p {
+  margin: 0;
+}
+
+.favorites {
+  background-color: #fff7fb;
+}
+
+.favorites input[type="radio"] {
+  display: none;
+}
+
+.toggle-menu {
+  margin-bottom: 18px;
+}
+
+.toggle-menu label {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border-radius: 12px;
+  background-color: #e8f3ff;
+  color: #4f6f94;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-menu label:hover {
+  background-color: #d8ebff;
+}
+
+.tab-box {
+  display: none;
+  margin-top: 18px;
+}
+
+.tab-box p {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+#dog:checked ~ .dog-box,
+#preference:checked ~ .preference-box,
+#travel:checked ~ .travel-box {
+  display: block;
+}
+
+#dog:checked ~ .toggle-menu label[for="dog"],
+#preference:checked ~ .toggle-menu label[for="preference"],
+#travel:checked ~ .toggle-menu label[for="travel"] {
+  background-color: #bcdcff;
+  color: #35527a;
+}
+
+.fav-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+  justify-items: center;
+}
+
+.fav-img {
+  width: 100%;
+  max-width: 230px;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.fav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fav-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.insta-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background-color: #9fc4ee;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.insta-link:hover {
+  background-color: #84b2e4;
+}
+
+.contact {
+  background-color: #f3f8ff;
+}
+
+.contact-links {
+  margin-top: 16px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: #9fc4ee;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact-links a:hover {
+  background-color: #84b2e4;
+  transform: translateY(-2px);
+}
+
+.footer {
+  text-align: center;
+  margin: 40px 0;
+  color: #8aa0b7;
+}
+
+@media (max-width: 768px) {
+  .intro-box h1 {
+    font-size: 36px;
+  }
+
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fav-gallery {
+    grid-template-columns: 1fr;
+  }
+}

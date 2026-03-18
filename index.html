@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ha Eunbyul</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <section class="home">
+        <div class="intro-box">
+          <img src="profile.jpg" alt="프로필" class="profile-img" />
+
+          <h1>Ha Eunbyul</h1>
+          <p>
+            2004.01.17<br />
+            백엔드 아기사자
+          </p>
+
+          <div class="icon-menu">
+            <a href="#about"><i class="fa-solid fa-user"></i></a>
+            <a href="#favorites"><i class="fa-solid fa-heart"></i></a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="section about" id="about">
+        <h2>About Me</h2>
+
+        <div class="about-box">
+          <img src="me.jpg" alt="내 사진" class="about-img" />
+
+          <p>
+            안녕하세요 정보보안암호수학과 하은별입니다-!<br />
+            밑에 간단한 사진들과 함께 저에 대해 소개해 보겠습니당
+          </p>
+        </div>
+      </div>
+
+      <div class="section favorites" id="favorites">
+        <h2>My Favorites</h2>
+
+        <input type="radio" name="favorite" id="dog" checked />
+        <input type="radio" name="favorite" id="preference" />
+        <input type="radio" name="favorite" id="travel" />
+
+        <div class="toggle-menu">
+          <label for="dog">🐶 강아지</label>
+          <label for="preference">🙃 취향</label>
+          <label for="travel">✈️ 여행</label>
+        </div>
+
+        <div class="tab-box dog-box">
+          <p>
+            저는 강아지를 엄청 좋아해요! 나중에 기회가 되면 꼭 키우고 싶은..<br />
+            너무너무 사랑스러운 생명체 아닌가요?????
+          </p>
+
+          <div class="fav-gallery">
+            <img src="dog.jpg" alt="강아지 사진" class="fav-img" />
+            <img src="dog2.jpg" alt="강아지 사진" class="fav-img" />
+            <img src="dog3.jpg" alt="강아지 사진" class="fav-img" />
+          </div>
+
+          <p>
+            제가 요즘 인스타에서 좋아하는 강아지 치카예요! <br />
+            밑에 인스타로 구경해보세요 🐶
+          </p>
+
+          <a
+            href="https://instagram.com/street_chika/"
+            target="_blank"
+            class="insta-link"
+          >
+            instagram 보러가기
+          </a>
+        </div>
+
+        <div class="tab-box preference-box">
+          <div class="fav-gallery">
+            <div class="fav-item">
+              <img src="preference.jpg" alt="몰티즈 이모티콘" class="fav-img" />
+              <p>
+                제가 애용하는 몰티즈 이모티콘입니당 <br />
+                하얗고 귀여운 걸 좋아해요 <br />
+                여러 시리즈가 있으니 한 번 사용해보세요!
+              </p>
+            </div>
+
+            <div class="fav-item">
+              <img src="preference2.jpg" alt="눈" class="fav-img" />
+              <p>
+                저는 사계절 중 겨울을 제일 좋아하는데요 <br />
+                그 이유 중 하나가 바로 눈이랍니다 <br />
+                아무도 안 밟은 눈 밟는 거를 좋아해요 ㅎㅎ
+              </p>
+            </div>
+
+            <div class="fav-item">
+              <img src="preference3.jpg" alt="딸기 디저트" class="fav-img" />
+              <p>
+                디저트도 엄청 좋아해요 <br />
+                특히 딸기가 들어간 디저트를 좋아하는데 <br />
+                크림이 너무 많거나 느끼한 거만 아니면 <br />
+                다 잘 먹습니당
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-box travel-box">
+          <div class="fav-gallery">
+            <div class="fav-item">
+              <img src="travel1.jpg" alt="런던 사진" class="fav-img" />
+            </div>
+
+            <div class="fav-item">
+              <img src="travel2.jpg" alt="스위스 사진" class="fav-img" />
+            </div>
+
+            <div class="fav-item">
+              <img src="travel3.jpg" alt="도쿄 사진" class="fav-img" />
+            </div>
+          </div>
+
+          <p>
+            방학이나 시간이 되면 여행 다니는 것도 좋아해요 ✈️ <br />
+            개인적으로 기회가 되면 호주나 캐나다를 꼭 가보고 싶어요!
+          </p>
+        </div>
+      </div>
+
+      <div class="section contact" id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-links">
+          <a href="mailto:eun_byeul@naver.com">📧 Email</a>
+          <a href="https://instagram.com/nueluyb" target="_blank"
+            >📷 Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
